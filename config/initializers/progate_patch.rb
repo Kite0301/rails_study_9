@@ -55,7 +55,7 @@ module ActionView::Helpers::AssetTagHelper
       tag_options = {
         "rel" => "stylesheet",
         "media" => "screen",
-        # "href" => path_to_stylesheet(source, path_options) + '&privateIp=172.17.0.7&containerPort=3000&languageName=rails5'
+        "href" => path_to_stylesheet(source, path_options) + '&privateIp=172.17.0.7&containerPort=3000&languageName=rails5'
       }.merge!(options)
       tag(:link, tag_options)
     }.join("\n").html_safe
